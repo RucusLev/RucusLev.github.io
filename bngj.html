@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  input[type=text] {
+      background-color: violet; 
+  }
+  input[type=text]:focus {
+      background-color: teal;
+  }
+  input[type=submit]:focus {
+      background-color: slateblue;
+  }
+  a:active {
+      background-color: royalblue;
+  }
+  a:link {
+      color: orangered;
+  }
+  .block {
+      width: 200px;
+      height: 200px;
+      color: white;
+      background-color: yellow;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      white-space: nowrap;
+      position: relative;
+
+      }
+      .block::after {
+          content: '🤖';
+
+      }
+      .block::after {
+          content: '💩';
+      }
+      .block::before {
+          content: '';
+          position: absolute;
+          width: 90%;
+          height: 5px;
+          background-color: yellowgreen;
+          top: 10%;
+
+      }
+      .block::after {
+          content: '';
+          position: absolute;
+          width: 90%;
+          height: 5px;
+          background-color: yellowgreen;
+          bottom: 10%;
+      }
+      .all:hover::after {
+          content: "всплывающее окно";
+          position: absolute;
+          padding: 1em;
+          width: 300px;
+          height: 120px;
+          color: white;
+          background-color: green;
+        }
+        .all {
+
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            white-space: nowrap;
+            position: relative;
+          background-color: rgb(15, 122, 108);
+            color: fuchsia;
+          padding: 1em;
+            display: inline-block;
+        }
+</style>
+<body>
+    <h1>Првиет</h1>
+    <form action="">
+        <input type="text" name="" id="">
+        <input type="submit" value="Поиск">
+    </form>
+    <body>
+        <a href="#">Простая ссылка</a>
+    </body>
+    <body>
+        <a href="activ.html">.Ссылка была посещена</a>
+        <a href="not_active.html">Ссылка не была посещена</a>
+    </body>
+    <body>
+        <div class="block">Просто текст</div>
+
+    </body>
+</body>
+    <div class="all">Наведи на меня курсор</div>
+</body>
+<body>
+    <div class="popup">Наведи на меня курсор</div>
+</body>
+</html>
