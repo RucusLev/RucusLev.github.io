@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display: flex;
+        height: 100vh;
+        margin: 0;
+        background-color: yellowgreen;
+    }
+     html {
+         overflow: hidden;
+     }
+    .container {
+        color: aqua;
+        font-family: fantasy;
+        width: 100%;
+        text-align: center;
+    }
+    svg {
+        display: block;
+        position: absolute;
+        width: calc(100vw + 40px);
+        bottom: 0;
+    }
+   @keyframes wave {
+       50% {
+           left: 0;
+       }
+   }
+   svg:nth-of-type(1){
+       left: -40px;
+       animation: wave 4s .4s ease-in-out infinite;
+   }
+
+svg:nth-of-type(2){
+    left: -20px;
+    animation: wave 3s .4s ease-in-out infinite;
+}
+svg:nth-of-type(3){
+    left: -10px;
+    animation: wave 2s .4s ease-in-out infinite;
+}
+</style>
+
+<body>
+    <div class="container">
+        <h1>Hello World</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Quis temporibus quibusdam nobis facilis, culpa quaerat tempora perspiciatis minus,
+            numquam obcaecati beatae laudantium magni sed reiciendis inventore.
+            Laborum illum accusamus earum.</p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e7008a" fill-opacity="1" d="M0,192L60,192C120,192,240,192,360,213.3C480,235,600,277,720,261.3C840,245,960,171,1080,138.7C1200,107,1320,117,1380,122.7L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000b76" fill-opacity="1" d="M0,32L60,37.3C120,43,240,53,360,53.3C480,53,600,43,720,64C840,85,960,139,1080,176C1200,213,1320,235,1380,245.3L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#5050e9" fill-opacity="1" d="M0,128L60,138.7C120,149,240,171,360,176C480,181,600,171,720,176C840,181,960,203,1080,197.3C1200,192,1320,160,1380,144L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </div>
+</body>
+
+</html>
